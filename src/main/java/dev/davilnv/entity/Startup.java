@@ -1,14 +1,12 @@
 package dev.davilnv.entity;
 
-import java.util.ArrayList;
-
 public class Startup {
 	private int id_startup;
 	private String name;
 	private String location;
 	private int numberEmployers;
 	private String investmentSeries;
-	private ArrayList<Category> categories;
+	private String categories = "";
 	
 	public Startup(int id_startup, String name, String location, int numberEmployers, String investmentSeries) {
 		super();
@@ -17,7 +15,6 @@ public class Startup {
 		this.location = location;
 		this.numberEmployers = numberEmployers;
 		this.investmentSeries = investmentSeries;
-		this.categories = new ArrayList<>();
 	}
 
 	public int getId_startup() {
@@ -60,12 +57,12 @@ public class Startup {
 		this.investmentSeries = investmentSeries;
 	}
 
-	public ArrayList<Category> getCategories() {
+	public String getCategories() {
 		return categories;
 	}
 
-	public void setCategories(Category category) {
-		this.categories.add(category);
+	public void setCategories(String category) {
+		this.categories = category;
 	}
 	
 }

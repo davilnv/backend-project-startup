@@ -3,6 +3,8 @@ package dev.davilnv.model;
 public class Query {
 
 	public static final String GET_ALL_STARTUP = "select * from " + TableInfo.STARTUP_TABLE;
+	public static final String GET_STARTUP_BY_ID = "select * from " + TableInfo.STARTUP_TABLE +
+			" where " + TableInfo.STARTUP_ID + " = ";
 	public static final String GET_STARTUP_CATEGORY_BY_ID = "select cat." +
 			TableInfo.CATEGORY_ID + ", cat." + TableInfo.CATEGORY_DESCRIPTION + 
 			" from " + 
