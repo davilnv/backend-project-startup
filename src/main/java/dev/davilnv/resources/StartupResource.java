@@ -40,7 +40,11 @@ public class StartupResource {
     				rsStartup.getString(2), 
     				rsStartup.getString(3), 
     				rsStartup.getInt(4), 
-    				rsStartup.getString(5)
+    				rsStartup.getString(5),
+    				rsStartup.getString(6),
+    				rsStartup.getString(7),
+    				rsStartup.getInt(8),
+    				rsStartup.getDouble(9)
     		);
     		
     		rsCategory = conect.createStatement().executeQuery(Query.GET_STARTUP_CATEGORY_BY_ID + stp.getId_startup());
@@ -79,7 +83,11 @@ public class StartupResource {
     				rsStartup.getString(2), 
     				rsStartup.getString(3), 
     				rsStartup.getInt(4), 
-    				rsStartup.getString(5)
+    				rsStartup.getString(5),
+    				rsStartup.getString(6),
+    				rsStartup.getString(7),
+    				rsStartup.getInt(8),
+    				rsStartup.getDouble(9)
     		);
     		
     		rsCategory = conect.createStatement().executeQuery(Query.GET_STARTUP_CATEGORY_BY_ID + stp.getId_startup());
